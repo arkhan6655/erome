@@ -1,448 +1,545 @@
-[2025-02-08 18:25:31] [class-ss-archive-creation-job.php:97] Starting a job; no job is presently running
-[2025-02-08 18:25:31] [class-ss-archive-creation-job.php:98] Here's our task list: setup, fetch_urls, transfer_files_locally, wrapup
-[2025-02-08 18:25:31] [class-ss-archive-creation-job.php:116] Pushing first task to queue: setup
-[2025-02-08 18:25:32] [class-ss-archive-creation-job.php:172] Current task: setup
-[2025-02-08 18:25:32] [class-ss-archive-creation-job.php:182] Performing task: setup
-[2025-02-08 18:25:32] [class-ss-task.php:44] Status message: [setup] Setting up
-[2025-02-08 18:25:32] [class-ss-setup-task.php:33] Creating archive directory: F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131\
-[2025-02-08 18:25:32] [class-ss-setup-task.php:72] Adding origin URL to queue: http://localhost/erome/
-[2025-02-08 18:25:32] [class-ss-archive-creation-job.php:204] We've found our next task: fetch_urls
-[2025-02-08 18:25:32] [class-ss-archive-creation-job.php:172] Current task: fetch_urls
-[2025-02-08 18:25:32] [class-ss-archive-creation-job.php:182] Performing task: fetch_urls
-[2025-02-08 18:25:32] [class-ss-fetch-urls-task.php:69] Total pages: 1; Pages remaining: 1
-[2025-02-08 18:25:32] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/
-[2025-02-08 18:25:32] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 1
-[2025-02-08 18:25:32] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:32] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a19c92c75-Y70RJJ.tmp
-[2025-02-08 18:25:32] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/?simply_static_page=271
-[2025-02-08 18:25:32] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/?simply_static_page=271
-[2025-02-08 18:25:33] [class-ss-url-fetcher.php:103] Filesize: 28293 bytes
-[2025-02-08 18:25:33] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
-[2025-02-08 18:25:33] [class-ss-url-fetcher.php:233] New filename for static page: /index.html
-[2025-02-08 18:25:33] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a19c92c75-Y70RJJ.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/index.html
-[2025-02-08 18:25:33] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:33] [class-ss-fetch-urls-task.php:158] Adding 27 URLs to the queue
-[2025-02-08 18:25:34] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:34] [class-ss-page.php:119] Checking Content Identical:481443f109eb0571a2bfb49df141ac697ad44133===. Value: FALSE
-[2025-02-08 18:25:34] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 0 of 1 pages/files
-[2025-02-08 18:25:34] [class-ss-archive-creation-job.php:212] We're not done with the fetch_urls task yet
-[2025-02-08 18:25:34] [class-ss-archive-creation-job.php:172] Current task: fetch_urls
-[2025-02-08 18:25:34] [class-ss-archive-creation-job.php:182] Performing task: fetch_urls
-[2025-02-08 18:25:34] [class-ss-fetch-urls-task.php:69] Total pages: 28; Pages remaining: 27
-[2025-02-08 18:25:34] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome
-[2025-02-08 18:25:34] [class-ss-task.php:58] [PAGES STATUS] Remaining:27; Total: 28
-[2025-02-08 18:25:34] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:34] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a19ea34bb-JEvXLH.tmp
-[2025-02-08 18:25:34] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome?simply_static_page=272
-[2025-02-08 18:25:34] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome?simply_static_page=272
-[2025-02-08 18:25:34] [class-ss-url-fetcher.php:103] Filesize: 353 bytes
-[2025-02-08 18:25:34] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=iso-8859-1
-[2025-02-08 18:25:34] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
-[2025-02-08 18:25:35] [class-ss-fetch-urls-task.php:203] redirect_url: http://localhost/erome/
-[2025-02-08 18:25:35] [class-ss-fetch-urls-task.php:212] This is a redirect to a trailing slashed version of the same page; adding new URL to the queue
-[2025-02-08 18:25:35] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/sample-page/
-[2025-02-08 18:25:35] [class-ss-task.php:58] [PAGES STATUS] Remaining:26; Total: 28
-[2025-02-08 18:25:35] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:35] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a19f25455-RO6SNI.tmp
-[2025-02-08 18:25:35] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/sample-page/?simply_static_page=273
-[2025-02-08 18:25:35] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/sample-page/?simply_static_page=273
-[2025-02-08 18:25:35] [class-ss-url-fetcher.php:103] Filesize: 28978 bytes
-[2025-02-08 18:25:35] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
-[2025-02-08 18:25:35] [class-ss-url-fetcher.php:233] New filename for static page: /sample-page/index.html
-[2025-02-08 18:25:35] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a19f25455-RO6SNI.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/sample-page/index.html
-[2025-02-08 18:25:35] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:35] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:35] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:35] [class-ss-page.php:119] Checking Content Identical:65b490dac3776704f82b3e8d56e5f40870cedb48===. Value: FALSE
-[2025-02-08 18:25:35] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/category/uncategorized/
-[2025-02-08 18:25:35] [class-ss-task.php:58] [PAGES STATUS] Remaining:25; Total: 28
-[2025-02-08 18:25:35] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:35] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a19fe1172-gQSjvy.tmp
-[2025-02-08 18:25:35] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/category/uncategorized/?simply_static_page=274
-[2025-02-08 18:25:35] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/category/uncategorized/?simply_static_page=274
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:103] Filesize: 25018 bytes
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:233] New filename for static page: /category/uncategorized/index.html
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a19fe1172-gQSjvy.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/category/uncategorized/index.html
-[2025-02-08 18:25:36] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:36] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:36] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:36] [class-ss-page.php:119] Checking Content Identical:482243baace47d6d0680b127aa98cba6cadc6578===. Value: FALSE
-[2025-02-08 18:25:36] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/tesyt/
-[2025-02-08 18:25:36] [class-ss-task.php:58] [PAGES STATUS] Remaining:24; Total: 28
-[2025-02-08 18:25:36] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a080a46-ovKwid.tmp
-[2025-02-08 18:25:36] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/tesyt/?simply_static_page=275
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/tesyt/?simply_static_page=275
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:103] Filesize: 33268 bytes
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:233] New filename for static page: /tesyt/index.html
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a080a46-ovKwid.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/tesyt/index.html
-[2025-02-08 18:25:36] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:36] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:36] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:36] [class-ss-page.php:119] Checking Content Identical:6cbe6d263501a5df54d1ff2a1f63938edc514436===. Value: FALSE
-[2025-02-08 18:25:36] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/hello/
-[2025-02-08 18:25:36] [class-ss-task.php:58] [PAGES STATUS] Remaining:23; Total: 28
-[2025-02-08 18:25:36] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a0ebaa9-ytZS19.tmp
-[2025-02-08 18:25:36] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/hello/?simply_static_page=276
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/hello/?simply_static_page=276
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:103] Filesize: 32310 bytes
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:233] New filename for static page: /hello/index.html
-[2025-02-08 18:25:36] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a0ebaa9-ytZS19.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/hello/index.html
-[2025-02-08 18:25:37] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:37] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:37] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:37] [class-ss-page.php:119] Checking Content Identical:e94c9088c35434c837005f309fcc393cd1e7a2d2===. Value: FALSE
-[2025-02-08 18:25:37] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/youtube/
-[2025-02-08 18:25:37] [class-ss-task.php:58] [PAGES STATUS] Remaining:22; Total: 28
-[2025-02-08 18:25:37] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:37] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a16930a-3MKqZM.tmp
-[2025-02-08 18:25:37] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/youtube/?simply_static_page=277
-[2025-02-08 18:25:37] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/youtube/?simply_static_page=277
-[2025-02-08 18:25:37] [class-ss-url-fetcher.php:103] Filesize: 36305 bytes
-[2025-02-08 18:25:37] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
-[2025-02-08 18:25:37] [class-ss-url-fetcher.php:233] New filename for static page: /youtube/index.html
-[2025-02-08 18:25:37] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a16930a-3MKqZM.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/youtube/index.html
-[2025-02-08 18:25:37] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:37] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:37] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:37] [class-ss-page.php:119] Checking Content Identical:13b23eb196fd4743b1a8dc0e6fb2faec00e59a95===. Value: FALSE
-[2025-02-08 18:25:37] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/xviddeos-watch-free-porn-videos-here/
-[2025-02-08 18:25:37] [class-ss-task.php:58] [PAGES STATUS] Remaining:21; Total: 28
-[2025-02-08 18:25:38] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a204d65-kQhb0B.tmp
-[2025-02-08 18:25:38] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/xviddeos-watch-free-porn-videos-here/?simply_static_page=278
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/xviddeos-watch-free-porn-videos-here/?simply_static_page=278
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:103] Filesize: 34413 bytes
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:233] New filename for static page: /xviddeos-watch-free-porn-videos-here/index.html
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a204d65-kQhb0B.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/xviddeos-watch-free-porn-videos-here/index.html
-[2025-02-08 18:25:38] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:38] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:38] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:38] [class-ss-page.php:119] Checking Content Identical:9dd748d7b1c9d544305d36d9d637e13f65f0135a===. Value: FALSE
-[2025-02-08 18:25:38] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/hello-world/
-[2025-02-08 18:25:38] [class-ss-task.php:58] [PAGES STATUS] Remaining:20; Total: 28
-[2025-02-08 18:25:38] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a268b4d-KaLnGj.tmp
-[2025-02-08 18:25:38] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/hello-world/?simply_static_page=279
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/hello-world/?simply_static_page=279
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:103] Filesize: 32701 bytes
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:233] New filename for static page: /hello-world/index.html
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a268b4d-KaLnGj.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/hello-world/index.html
-[2025-02-08 18:25:38] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:38] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:38] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:38] [class-ss-page.php:119] Checking Content Identical:c1ee747e015a4639339f671133871b7b29c5bf3d===. Value: FALSE
-[2025-02-08 18:25:38] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/uploads/2025/02/Screenshot-2025-02-08-222319.png
-[2025-02-08 18:25:38] [class-ss-task.php:58] [PAGES STATUS] Remaining:19; Total: 28
-[2025-02-08 18:25:38] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a2e9051-uZkUve.tmp
-[2025-02-08 18:25:38] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/uploads/2025/02/Screenshot-2025-02-08-222319.png?simply_static_page=280
-[2025-02-08 18:25:38] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/uploads/2025/02/Screenshot-2025-02-08-222319.png?simply_static_page=280
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:103] Filesize: 454234 bytes
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/png
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2025/02/Screenshot-2025-02-08-222319.png
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a2e9051-uZkUve.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-content/uploads/2025/02/Screenshot-2025-02-08-222319.png
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:39] [class-ss-page.php:119] Checking Content Identical:5907108c103d81609c9e88e7570c94a119f0caeb===. Value: FALSE
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-includes/js/jquery/jquery.min.js
-[2025-02-08 18:25:39] [class-ss-task.php:58] [PAGES STATUS] Remaining:18; Total: 28
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a32669a-cXuHpX.tmp
-[2025-02-08 18:25:39] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-includes/js/jquery/jquery.min.js?simply_static_page=281
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-includes/js/jquery/jquery.min.js?simply_static_page=281
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:103] Filesize: 87553 bytes
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/js/jquery/jquery.min.js
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a32669a-cXuHpX.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-includes/js/jquery/jquery.min.js
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:39] [class-ss-page.php:119] Checking Content Identical:79cd3587d565afe290076a8d36c31c305a573d18===. Value: FALSE
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-includes/js/jquery/jquery-migrate.min.js
-[2025-02-08 18:25:39] [class-ss-task.php:58] [PAGES STATUS] Remaining:17; Total: 28
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a36a874-jELAcE.tmp
-[2025-02-08 18:25:39] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-includes/js/jquery/jquery-migrate.min.js?simply_static_page=282
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-includes/js/jquery/jquery-migrate.min.js?simply_static_page=282
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:103] Filesize: 13577 bytes
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/js/jquery/jquery-migrate.min.js
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a36a874-jELAcE.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-includes/js/jquery/jquery-migrate.min.js
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:39] [class-ss-page.php:119] Checking Content Identical:3ad0c10e501ac2a9bfa18f9cd7e700219b378738===. Value: FALSE
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/superfish.js
-[2025-02-08 18:25:39] [class-ss-task.php:58] [PAGES STATUS] Remaining:16; Total: 28
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a39d0ec-KKJxFu.tmp
-[2025-02-08 18:25:39] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/assets/js/superfish.js?simply_static_page=283
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/superfish.js?simply_static_page=283
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:103] Filesize: 7548 bytes
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/assets/js/superfish.js
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a39d0ec-KKJxFu.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-content/themes/videoshare/assets/js/superfish.js
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:39] [class-ss-page.php:119] Checking Content Identical:6184e0eb94092bf7165dc4a4b534737bf62c19dc===. Value: FALSE
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/html5.js
-[2025-02-08 18:25:39] [class-ss-task.php:58] [PAGES STATUS] Remaining:15; Total: 28
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a3b0adf-CUuLxU.tmp
-[2025-02-08 18:25:39] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/assets/js/html5.js?simply_static_page=284
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/html5.js?simply_static_page=284
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:103] Filesize: 10330 bytes
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/assets/js/html5.js
-[2025-02-08 18:25:39] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a3b0adf-CUuLxU.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-content/themes/videoshare/assets/js/html5.js
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:39] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:39] [class-ss-page.php:119] Checking Content Identical:a5767b8325822da1212f702e79aea069747e4747===. Value: FALSE
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/owl.carousel.js
-[2025-02-08 18:25:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:14; Total: 28
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a407121-lSDk1d.tmp
-[2025-02-08 18:25:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/assets/js/owl.carousel.js?simply_static_page=285
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/owl.carousel.js?simply_static_page=285
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:103] Filesize: 96566 bytes
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/assets/js/owl.carousel.js
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a407121-lSDk1d.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-content/themes/videoshare/assets/js/owl.carousel.js
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:40] [class-ss-page.php:119] Checking Content Identical:d0058dbc66bb0767fbfc8a9323384bb2fb14c311===. Value: FALSE
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/index.js
-[2025-02-08 18:25:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:13; Total: 28
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a428207-jtfo4a.tmp
-[2025-02-08 18:25:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/assets/js/index.js?simply_static_page=286
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/index.js?simply_static_page=286
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:103] Filesize: 30672 bytes
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/assets/js/index.js
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a428207-jtfo4a.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-content/themes/videoshare/assets/js/index.js
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:40] [class-ss-page.php:119] Checking Content Identical:6dd585ed47a2876b149ce6be741b3d83c6ea909c===. Value: FALSE
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/jquery.custom.js
-[2025-02-08 18:25:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 28
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a443728-csFWa5.tmp
-[2025-02-08 18:25:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/assets/js/jquery.custom.js?simply_static_page=287
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/jquery.custom.js?simply_static_page=287
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:103] Filesize: 3859 bytes
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/assets/js/jquery.custom.js
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a443728-csFWa5.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-content/themes/videoshare/assets/js/jquery.custom.js
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:40] [class-ss-page.php:119] Checking Content Identical:d6855138645491c1757d1294fcc02738e5ab6794===. Value: FALSE
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/feed/
-[2025-02-08 18:25:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 28
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/erome/feed/
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-includes/css/dist/block-library/style.min.css
-[2025-02-08 18:25:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 28
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a45d521-CBeJpa.tmp
-[2025-02-08 18:25:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-includes/css/dist/block-library/style.min.css?simply_static_page=289
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-includes/css/dist/block-library/style.min.css?simply_static_page=289
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:103] Filesize: 114706 bytes
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/css/dist/block-library/style.min.css
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a45d521-CBeJpa.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-includes/css/dist/block-library/style.min.css
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:40] [class-ss-page.php:119] Checking Content Identical:dc3b1a37381e079fda8db59c1a9469852cd18b80===. Value: FALSE
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-includes/css/dashicons.min.css
-[2025-02-08 18:25:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 28
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a47a100-nrLv5G.tmp
-[2025-02-08 18:25:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-includes/css/dashicons.min.css?simply_static_page=290
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-includes/css/dashicons.min.css?simply_static_page=290
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:103] Filesize: 59148 bytes
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/css/dashicons.min.css
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a47a100-nrLv5G.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-includes/css/dashicons.min.css
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:40] [class-ss-page.php:119] Checking Content Identical:f1bee4a6a5a150d75a72fa5d607966f41d1cabc2===. Value: FALSE
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/plugins/post-views-counter/css/frontend.min.css
-[2025-02-08 18:25:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 28
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a4a0874-jhH7UI.tmp
-[2025-02-08 18:25:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/plugins/post-views-counter/css/frontend.min.css?simply_static_page=291
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/plugins/post-views-counter/css/frontend.min.css?simply_static_page=291
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:103] Filesize: 1058 bytes
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/plugins/post-views-counter/css/frontend.min.css
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a4a0874-jhH7UI.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-content/plugins/post-views-counter/css/frontend.min.css
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:40] [class-ss-page.php:119] Checking Content Identical:3aa8ddcec63fdd455bd8a4ccb34da371dc17b10b===. Value: FALSE
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/fonts/e5c1c8f8be89340d8fbe505e41a61a3b.css
-[2025-02-08 18:25:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 28
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a4b560c-kFHdo4.tmp
-[2025-02-08 18:25:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/fonts/e5c1c8f8be89340d8fbe505e41a61a3b.css?simply_static_page=292
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/fonts/e5c1c8f8be89340d8fbe505e41a61a3b.css?simply_static_page=292
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:103] Filesize: 11530 bytes
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/fonts/e5c1c8f8be89340d8fbe505e41a61a3b.css
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a4b560c-kFHdo4.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-content/fonts/e5c1c8f8be89340d8fbe505e41a61a3b.css
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:40] [class-ss-page.php:119] Checking Content Identical:15f1957337f61b9cf44e20c48fa797a14f81b601===. Value: FALSE
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/style.css
-[2025-02-08 18:25:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 28
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a4cfa2b-NK2fu3.tmp
-[2025-02-08 18:25:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/style.css?simply_static_page=293
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/style.css?simply_static_page=293
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:103] Filesize: 69325 bytes
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/style.css
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a4cfa2b-NK2fu3.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-content/themes/videoshare/style.css
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:40] [class-ss-page.php:119] Checking Content Identical:545a1608b22ee12472f400b77c8e235ff226d49e===. Value: FALSE
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/assets/css/font-awesome.css
-[2025-02-08 18:25:40] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 28
-[2025-02-08 18:25:40] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a4f1c2e-1ao2wx.tmp
-[2025-02-08 18:25:40] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/assets/css/font-awesome.css?simply_static_page=294
-[2025-02-08 18:25:40] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/assets/css/font-awesome.css?simply_static_page=294
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:103] Filesize: 74798 bytes
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/assets/css/font-awesome.css
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a4f1c2e-1ao2wx.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-content/themes/videoshare/assets/css/font-awesome.css
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:41] [class-ss-page.php:119] Checking Content Identical:dbeea50b750eae26ec216f0f568bfac61314b92a===. Value: FALSE
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/responsive.css
-[2025-02-08 18:25:41] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 28
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a51a902-Sul4ZB.tmp
-[2025-02-08 18:25:41] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/responsive.css?simply_static_page=295
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/responsive.css?simply_static_page=295
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:103] Filesize: 7662 bytes
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/responsive.css
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a51a902-Sul4ZB.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-content/themes/videoshare/responsive.css
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:41] [class-ss-page.php:119] Checking Content Identical:50fdf0ee92160ffb7d753a11e1ab60234c4fd681===. Value: FALSE
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/genericons/genericons.css
-[2025-02-08 18:25:41] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 28
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:83] URL is not being excluded
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a52c7d5-rfuZBC.tmp
-[2025-02-08 18:25:41] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/genericons/genericons.css?simply_static_page=296
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/genericons/genericons.css?simply_static_page=296
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:103] Filesize: 229 bytes
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/genericons/genericons.css
-[2025-02-08 18:25:41] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a1a52c7d5-rfuZBC.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131/wp-content/themes/videoshare/genericons/genericons.css
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
-[2025-02-08 18:25:41] [class-ss-page.php:119] Checking Content Identical:d06a972143e86581487bb5eecd3edcbeda44948e===. Value: FALSE
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-json/
-[2025-02-08 18:25:41] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 28
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/erome/wp-json/
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/xmlrpc.php
-[2025-02-08 18:25:41] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 28
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/erome/xmlrpc.php
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
-[2025-02-08 18:25:41] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 1 of 28 pages/files
-[2025-02-08 18:25:41] [class-ss-archive-creation-job.php:212] We're not done with the fetch_urls task yet
-[2025-02-08 18:25:41] [class-ss-archive-creation-job.php:172] Current task: fetch_urls
-[2025-02-08 18:25:41] [class-ss-archive-creation-job.php:182] Performing task: fetch_urls
-[2025-02-08 18:25:41] [class-ss-fetch-urls-task.php:69] Total pages: 28; Pages remaining: 0
-[2025-02-08 18:25:41] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 28 of 28 pages/files
-[2025-02-08 18:25:41] [class-ss-archive-creation-job.php:204] We've found our next task: transfer_files_locally
-[2025-02-08 18:25:41] [class-ss-archive-creation-job.php:234] Cleaning on first run for task: transfer_files_locally
-[2025-02-08 18:25:41] [class-ss-archive-creation-job.php:172] Current task: transfer_files_locally
-[2025-02-08 18:25:41] [class-ss-archive-creation-job.php:182] Performing task: transfer_files_locally
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /index.html
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /sample-page/index.html
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/sample-page
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /category/uncategorized/index.html
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/category/uncategorized
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /tesyt/index.html
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/tesyt
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /hello/index.html
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/hello
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /youtube/index.html
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/youtube
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /xviddeos-watch-free-porn-videos-here/index.html
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/xviddeos-watch-free-porn-videos-here
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /hello-world/index.html
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/hello-world
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/uploads/2025/02/Screenshot-2025-02-08-222319.png
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/uploads/2025/02
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-includes/js/jquery/jquery.min.js
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-includes/js/jquery
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-includes/js/jquery/jquery-migrate.min.js
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-includes/js/jquery
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/assets/js/superfish.js
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/assets/js
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/assets/js/html5.js
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/assets/js
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/assets/js/owl.carousel.js
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/assets/js
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/assets/js/index.js
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/assets/js
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/assets/js/jquery.custom.js
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/assets/js
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-includes/css/dist/block-library/style.min.css
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-includes/css/dist/block-library
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-includes/css/dashicons.min.css
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-includes/css
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/plugins/post-views-counter/css/frontend.min.css
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/plugins/post-views-counter/css
-[2025-02-08 18:25:41] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/fonts/e5c1c8f8be89340d8fbe505e41a61a3b.css
-[2025-02-08 18:25:42] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/fonts
-[2025-02-08 18:25:42] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/style.css
-[2025-02-08 18:25:42] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare
-[2025-02-08 18:25:42] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/assets/css/font-awesome.css
-[2025-02-08 18:25:42] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/assets/css
-[2025-02-08 18:25:42] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/responsive.css
-[2025-02-08 18:25:42] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare
-[2025-02-08 18:25:42] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/genericons/genericons.css
-[2025-02-08 18:25:42] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/genericons
-[2025-02-08 18:25:42] [class-ss-transfer-files-locally-task.php:98] [Transfer] Total Pages:24. Processed Pages: 24
-[2025-02-08 18:25:42] [class-ss-task.php:44] Status message: [transfer_files_locally] Transferred 24 of 24 files
-[2025-02-08 18:25:42] [trait-can-process-pages.php:112] Total pages: 24; Pages remaining: 0
-[2025-02-08 18:25:42] [class-ss-transfer-files-locally-task.php:197] Transferring 404 Page
-[2025-02-08 18:25:42] [class-ss-transfer-files-locally-task.php:200] No 404 Page found at F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739039131\404\index.html
-[2025-02-08 18:25:42] [class-ss-task.php:44] Status message: [destination_url] Destination URL: <a href="https://arkhan6655.github.io/erome/" target="_blank">https://arkhan6655.github.io/erome/</a>
-[2025-02-08 18:25:42] [class-ss-archive-creation-job.php:204] We've found our next task: wrapup
-[2025-02-08 18:25:42] [class-ss-archive-creation-job.php:172] Current task: wrapup
-[2025-02-08 18:25:42] [class-ss-archive-creation-job.php:182] Performing task: wrapup
-[2025-02-08 18:25:42] [class-ss-wrapup-task.php:22] Deleting temporary files
-[2025-02-08 18:25:42] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
-[2025-02-08 18:25:42] [class-ss-archive-creation-job.php:199] This task is done and there are no more tasks, time to complete the job
-[2025-02-08 18:25:42] [class-ss-archive-creation-job.php:244] Completing the job
-[2025-02-08 18:25:42] [class-ss-archive-creation-job.php:371] Status message: [done] Done! Finished in 00:00:11
+[2025-02-08 18:49:11] [class-ss-archive-creation-job.php:97] Starting a job; no job is presently running
+[2025-02-08 18:49:11] [class-ss-archive-creation-job.php:98] Here's our task list: setup, fetch_urls, transfer_files_locally, wrapup
+[2025-02-08 18:49:11] [class-ss-archive-creation-job.php:116] Pushing first task to queue: setup
+[2025-02-08 18:49:11] [class-ss-archive-creation-job.php:172] Current task: setup
+[2025-02-08 18:49:11] [class-ss-archive-creation-job.php:182] Performing task: setup
+[2025-02-08 18:49:11] [class-ss-task.php:44] Status message: [setup] Setting up
+[2025-02-08 18:49:12] [class-ss-setup-task.php:33] Creating archive directory: F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551\
+[2025-02-08 18:49:12] [class-ss-setup-task.php:72] Adding origin URL to queue: http://localhost/erome/
+[2025-02-08 18:49:12] [class-ss-archive-creation-job.php:204] We've found our next task: fetch_urls
+[2025-02-08 18:49:12] [class-ss-archive-creation-job.php:172] Current task: fetch_urls
+[2025-02-08 18:49:12] [class-ss-archive-creation-job.php:182] Performing task: fetch_urls
+[2025-02-08 18:49:12] [class-ss-fetch-urls-task.php:69] Total pages: 1; Pages remaining: 1
+[2025-02-08 18:49:12] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/
+[2025-02-08 18:49:12] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 1
+[2025-02-08 18:49:12] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:12] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72833863-OYtHhB.tmp
+[2025-02-08 18:49:12] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/?simply_static_page=299
+[2025-02-08 18:49:12] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/?simply_static_page=299
+[2025-02-08 18:49:12] [class-ss-url-fetcher.php:103] Filesize: 29746 bytes
+[2025-02-08 18:49:12] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-02-08 18:49:12] [class-ss-url-fetcher.php:233] New filename for static page: /index.html
+[2025-02-08 18:49:12] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72833863-OYtHhB.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/index.html
+[2025-02-08 18:49:12] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:13] [class-ss-fetch-urls-task.php:158] Adding 29 URLs to the queue
+[2025-02-08 18:49:15] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:15] [class-ss-page.php:119] Checking Content Identical:d7e8047ec0fdfcd6e766aafb9690833ecc9fe6a3===. Value: FALSE
+[2025-02-08 18:49:16] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 0 of 1 pages/files
+[2025-02-08 18:49:16] [class-ss-archive-creation-job.php:212] We're not done with the fetch_urls task yet
+[2025-02-08 18:49:16] [class-ss-archive-creation-job.php:172] Current task: fetch_urls
+[2025-02-08 18:49:16] [class-ss-archive-creation-job.php:182] Performing task: fetch_urls
+[2025-02-08 18:49:16] [class-ss-fetch-urls-task.php:69] Total pages: 30; Pages remaining: 29
+[2025-02-08 18:49:16] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome
+[2025-02-08 18:49:16] [class-ss-task.php:58] [PAGES STATUS] Remaining:29; Total: 30
+[2025-02-08 18:49:16] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72c3829f-CPktZ5.tmp
+[2025-02-08 18:49:16] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome?simply_static_page=300
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome?simply_static_page=300
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:103] Filesize: 353 bytes
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=iso-8859-1
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2025-02-08 18:49:16] [class-ss-fetch-urls-task.php:203] redirect_url: http://localhost/erome/
+[2025-02-08 18:49:16] [class-ss-fetch-urls-task.php:212] This is a redirect to a trailing slashed version of the same page; adding new URL to the queue
+[2025-02-08 18:49:16] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/sample-page/
+[2025-02-08 18:49:16] [class-ss-task.php:58] [PAGES STATUS] Remaining:28; Total: 30
+[2025-02-08 18:49:16] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72c61745-ZHd6ql.tmp
+[2025-02-08 18:49:16] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/sample-page/?simply_static_page=301
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/sample-page/?simply_static_page=301
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:103] Filesize: 28978 bytes
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:233] New filename for static page: /sample-page/index.html
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72c61745-ZHd6ql.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/sample-page/index.html
+[2025-02-08 18:49:16] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:16] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:16] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:16] [class-ss-page.php:119] Checking Content Identical:65b490dac3776704f82b3e8d56e5f40870cedb48===. Value: FALSE
+[2025-02-08 18:49:16] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/category/uncategorized/
+[2025-02-08 18:49:16] [class-ss-task.php:58] [PAGES STATUS] Remaining:27; Total: 30
+[2025-02-08 18:49:16] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72cd3c6a-hlzhX6.tmp
+[2025-02-08 18:49:16] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/category/uncategorized/?simply_static_page=302
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/category/uncategorized/?simply_static_page=302
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:103] Filesize: 25018 bytes
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:233] New filename for static page: /category/uncategorized/index.html
+[2025-02-08 18:49:16] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72cd3c6a-hlzhX6.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/category/uncategorized/index.html
+[2025-02-08 18:49:16] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:17] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:17] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:17] [class-ss-page.php:119] Checking Content Identical:482243baace47d6d0680b127aa98cba6cadc6578===. Value: FALSE
+[2025-02-08 18:49:17] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/hi-everyone-sex-video-watch-downloaad/
+[2025-02-08 18:49:17] [class-ss-task.php:58] [PAGES STATUS] Remaining:26; Total: 30
+[2025-02-08 18:49:17] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:17] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72d4e021-XJ7N4F.tmp
+[2025-02-08 18:49:17] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/hi-everyone-sex-video-watch-downloaad/?simply_static_page=303
+[2025-02-08 18:49:17] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/hi-everyone-sex-video-watch-downloaad/?simply_static_page=303
+[2025-02-08 18:49:17] [class-ss-url-fetcher.php:103] Filesize: 34741 bytes
+[2025-02-08 18:49:17] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-02-08 18:49:17] [class-ss-url-fetcher.php:233] New filename for static page: /hi-everyone-sex-video-watch-downloaad/index.html
+[2025-02-08 18:49:17] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72d4e021-XJ7N4F.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/hi-everyone-sex-video-watch-downloaad/index.html
+[2025-02-08 18:49:17] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:18] [class-ss-fetch-urls-task.php:158] Adding 35 URLs to the queue
+[2025-02-08 18:49:18] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:18] [class-ss-page.php:119] Checking Content Identical:fdf5f5ab4bb44817c8e33268e4f84eb37418cacf===. Value: FALSE
+[2025-02-08 18:49:18] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/adam-marry-nude-porn-sex-xxx-video/
+[2025-02-08 18:49:18] [class-ss-task.php:58] [PAGES STATUS] Remaining:25; Total: 30
+[2025-02-08 18:49:18] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:18] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72e674fc-COrZXF.tmp
+[2025-02-08 18:49:18] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/adam-marry-nude-porn-sex-xxx-video/?simply_static_page=304
+[2025-02-08 18:49:18] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/adam-marry-nude-porn-sex-xxx-video/?simply_static_page=304
+[2025-02-08 18:49:18] [class-ss-url-fetcher.php:103] Filesize: 34733 bytes
+[2025-02-08 18:49:18] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2025-02-08 18:49:18] [class-ss-url-fetcher.php:233] New filename for static page: /adam-marry-nude-porn-sex-xxx-video/index.html
+[2025-02-08 18:49:18] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72e674fc-COrZXF.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/adam-marry-nude-porn-sex-xxx-video/index.html
+[2025-02-08 18:49:18] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:19] [class-ss-fetch-urls-task.php:158] Adding 35 URLs to the queue
+[2025-02-08 18:49:19] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:19] [class-ss-page.php:119] Checking Content Identical:d5224074072af608a4f6446ef41e948d1213625a===. Value: FALSE
+[2025-02-08 18:49:19] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/tesyt/
+[2025-02-08 18:49:19] [class-ss-task.php:58] [PAGES STATUS] Remaining:24; Total: 30
+[2025-02-08 18:49:19] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:19] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72f2ee33-ROZgSK.tmp
+[2025-02-08 18:49:19] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/tesyt/?simply_static_page=305
+[2025-02-08 18:49:19] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/tesyt/?simply_static_page=305
+[2025-02-08 18:49:19] [class-ss-url-fetcher.php:103] Filesize: 33268 bytes
+[2025-02-08 18:49:19] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
+[2025-02-08 18:49:19] [class-ss-url-fetcher.php:233] New filename for static page: /tesyt/index.html
+[2025-02-08 18:49:19] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72f2ee33-ROZgSK.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/tesyt/index.html
+[2025-02-08 18:49:19] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:19] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:19] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:19] [class-ss-page.php:119] Checking Content Identical:6cbe6d263501a5df54d1ff2a1f63938edc514436===. Value: FALSE
+[2025-02-08 18:49:19] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/hello/
+[2025-02-08 18:49:19] [class-ss-task.php:58] [PAGES STATUS] Remaining:23; Total: 30
+[2025-02-08 18:49:19] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:19] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72f9ded5-1YqKSa.tmp
+[2025-02-08 18:49:19] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/hello/?simply_static_page=306
+[2025-02-08 18:49:19] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/hello/?simply_static_page=306
+[2025-02-08 18:49:19] [class-ss-url-fetcher.php:103] Filesize: 32310 bytes
+[2025-02-08 18:49:19] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
+[2025-02-08 18:49:19] [class-ss-url-fetcher.php:233] New filename for static page: /hello/index.html
+[2025-02-08 18:49:19] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a72f9ded5-1YqKSa.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/hello/index.html
+[2025-02-08 18:49:19] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:19] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:19] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:20] [class-ss-page.php:119] Checking Content Identical:e94c9088c35434c837005f309fcc393cd1e7a2d2===. Value: FALSE
+[2025-02-08 18:49:20] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/youtube/
+[2025-02-08 18:49:20] [class-ss-task.php:58] [PAGES STATUS] Remaining:22; Total: 30
+[2025-02-08 18:49:20] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7300e4ae-VmzlY7.tmp
+[2025-02-08 18:49:20] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/youtube/?simply_static_page=307
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/youtube/?simply_static_page=307
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:103] Filesize: 36305 bytes
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:233] New filename for static page: /youtube/index.html
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7300e4ae-VmzlY7.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/youtube/index.html
+[2025-02-08 18:49:20] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:20] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:20] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:20] [class-ss-page.php:119] Checking Content Identical:13b23eb196fd4743b1a8dc0e6fb2faec00e59a95===. Value: FALSE
+[2025-02-08 18:49:20] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/xviddeos-watch-free-porn-videos-here/
+[2025-02-08 18:49:20] [class-ss-task.php:58] [PAGES STATUS] Remaining:21; Total: 30
+[2025-02-08 18:49:20] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7307158c-NmPdVD.tmp
+[2025-02-08 18:49:20] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/xviddeos-watch-free-porn-videos-here/?simply_static_page=308
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/xviddeos-watch-free-porn-videos-here/?simply_static_page=308
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:103] Filesize: 34413 bytes
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:233] New filename for static page: /xviddeos-watch-free-porn-videos-here/index.html
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7307158c-NmPdVD.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/xviddeos-watch-free-porn-videos-here/index.html
+[2025-02-08 18:49:20] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:20] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:20] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:20] [class-ss-page.php:119] Checking Content Identical:9dd748d7b1c9d544305d36d9d637e13f65f0135a===. Value: FALSE
+[2025-02-08 18:49:20] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/hello-world/
+[2025-02-08 18:49:20] [class-ss-task.php:58] [PAGES STATUS] Remaining:20; Total: 30
+[2025-02-08 18:49:20] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a730c8683-XNNdor.tmp
+[2025-02-08 18:49:20] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/hello-world/?simply_static_page=309
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/hello-world/?simply_static_page=309
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:103] Filesize: 32701 bytes
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:233] New filename for static page: /hello-world/index.html
+[2025-02-08 18:49:20] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a730c8683-XNNdor.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/hello-world/index.html
+[2025-02-08 18:49:20] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:21] [class-ss-page.php:119] Checking Content Identical:c1ee747e015a4639339f671133871b7b29c5bf3d===. Value: FALSE
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/uploads/2025/02/Screenshot-2025-02-08-222319.png
+[2025-02-08 18:49:21] [class-ss-task.php:58] [PAGES STATUS] Remaining:19; Total: 30
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7313a0c7-7qYCqT.tmp
+[2025-02-08 18:49:21] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/uploads/2025/02/Screenshot-2025-02-08-222319.png?simply_static_page=310
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/uploads/2025/02/Screenshot-2025-02-08-222319.png?simply_static_page=310
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:103] Filesize: 454234 bytes
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/png
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/uploads/2025/02/Screenshot-2025-02-08-222319.png
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7313a0c7-7qYCqT.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-content/uploads/2025/02/Screenshot-2025-02-08-222319.png
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:21] [class-ss-page.php:119] Checking Content Identical:5907108c103d81609c9e88e7570c94a119f0caeb===. Value: FALSE
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-includes/js/jquery/jquery.min.js
+[2025-02-08 18:49:21] [class-ss-task.php:58] [PAGES STATUS] Remaining:18; Total: 30
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a73155b4d-cWnzFB.tmp
+[2025-02-08 18:49:21] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-includes/js/jquery/jquery.min.js?simply_static_page=311
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-includes/js/jquery/jquery.min.js?simply_static_page=311
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:103] Filesize: 87553 bytes
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/js/jquery/jquery.min.js
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a73155b4d-cWnzFB.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-includes/js/jquery/jquery.min.js
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:21] [class-ss-page.php:119] Checking Content Identical:79cd3587d565afe290076a8d36c31c305a573d18===. Value: FALSE
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-includes/js/jquery/jquery-migrate.min.js
+[2025-02-08 18:49:21] [class-ss-task.php:58] [PAGES STATUS] Remaining:17; Total: 30
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a731aa77f-MnGJ9X.tmp
+[2025-02-08 18:49:21] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-includes/js/jquery/jquery-migrate.min.js?simply_static_page=312
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-includes/js/jquery/jquery-migrate.min.js?simply_static_page=312
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:103] Filesize: 13577 bytes
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/js/jquery/jquery-migrate.min.js
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a731aa77f-MnGJ9X.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-includes/js/jquery/jquery-migrate.min.js
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:21] [class-ss-page.php:119] Checking Content Identical:3ad0c10e501ac2a9bfa18f9cd7e700219b378738===. Value: FALSE
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/superfish.js
+[2025-02-08 18:49:21] [class-ss-task.php:58] [PAGES STATUS] Remaining:16; Total: 30
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a731d9ee0-GisjvH.tmp
+[2025-02-08 18:49:21] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/assets/js/superfish.js?simply_static_page=313
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/superfish.js?simply_static_page=313
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:103] Filesize: 7548 bytes
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/assets/js/superfish.js
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a731d9ee0-GisjvH.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-content/themes/videoshare/assets/js/superfish.js
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:21] [class-ss-page.php:119] Checking Content Identical:6184e0eb94092bf7165dc4a4b534737bf62c19dc===. Value: FALSE
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/html5.js
+[2025-02-08 18:49:21] [class-ss-task.php:58] [PAGES STATUS] Remaining:15; Total: 30
+[2025-02-08 18:49:21] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a731f1751-7RPQfG.tmp
+[2025-02-08 18:49:21] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/assets/js/html5.js?simply_static_page=314
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/html5.js?simply_static_page=314
+[2025-02-08 18:49:21] [class-ss-url-fetcher.php:103] Filesize: 10330 bytes
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/assets/js/html5.js
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a731f1751-7RPQfG.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-content/themes/videoshare/assets/js/html5.js
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:22] [class-ss-page.php:119] Checking Content Identical:a5767b8325822da1212f702e79aea069747e4747===. Value: FALSE
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/owl.carousel.js
+[2025-02-08 18:49:22] [class-ss-task.php:58] [PAGES STATUS] Remaining:14; Total: 30
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a73217633-H1KJWl.tmp
+[2025-02-08 18:49:22] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/assets/js/owl.carousel.js?simply_static_page=315
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/owl.carousel.js?simply_static_page=315
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:103] Filesize: 96566 bytes
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/assets/js/owl.carousel.js
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a73217633-H1KJWl.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-content/themes/videoshare/assets/js/owl.carousel.js
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:22] [class-ss-page.php:119] Checking Content Identical:d0058dbc66bb0767fbfc8a9323384bb2fb14c311===. Value: FALSE
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/index.js
+[2025-02-08 18:49:22] [class-ss-task.php:58] [PAGES STATUS] Remaining:13; Total: 30
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a73246781-kZgzNz.tmp
+[2025-02-08 18:49:22] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/assets/js/index.js?simply_static_page=316
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/index.js?simply_static_page=316
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:103] Filesize: 30672 bytes
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/assets/js/index.js
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a73246781-kZgzNz.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-content/themes/videoshare/assets/js/index.js
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:22] [class-ss-page.php:119] Checking Content Identical:6dd585ed47a2876b149ce6be741b3d83c6ea909c===. Value: FALSE
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/jquery.custom.js
+[2025-02-08 18:49:22] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 30
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a73260c25-FRO8b6.tmp
+[2025-02-08 18:49:22] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/assets/js/jquery.custom.js?simply_static_page=317
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/assets/js/jquery.custom.js?simply_static_page=317
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:103] Filesize: 3859 bytes
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/assets/js/jquery.custom.js
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a73260c25-FRO8b6.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-content/themes/videoshare/assets/js/jquery.custom.js
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:22] [class-ss-page.php:119] Checking Content Identical:d6855138645491c1757d1294fcc02738e5ab6794===. Value: FALSE
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/feed/
+[2025-02-08 18:49:22] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 30
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/erome/feed/
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-includes/css/dist/block-library/style.min.css
+[2025-02-08 18:49:22] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 30
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7328adf5-uJxMeF.tmp
+[2025-02-08 18:49:22] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-includes/css/dist/block-library/style.min.css?simply_static_page=319
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-includes/css/dist/block-library/style.min.css?simply_static_page=319
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:103] Filesize: 114706 bytes
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/css/dist/block-library/style.min.css
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7328adf5-uJxMeF.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-includes/css/dist/block-library/style.min.css
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:22] [class-ss-page.php:119] Checking Content Identical:dc3b1a37381e079fda8db59c1a9469852cd18b80===. Value: FALSE
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-includes/css/dashicons.min.css
+[2025-02-08 18:49:22] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 30
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a732a7af7-wTVTdo.tmp
+[2025-02-08 18:49:22] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-includes/css/dashicons.min.css?simply_static_page=320
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-includes/css/dashicons.min.css?simply_static_page=320
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:103] Filesize: 59148 bytes
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:233] New filename for static page: /wp-includes/css/dashicons.min.css
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a732a7af7-wTVTdo.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-includes/css/dashicons.min.css
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:22] [class-ss-page.php:119] Checking Content Identical:f1bee4a6a5a150d75a72fa5d607966f41d1cabc2===. Value: FALSE
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/plugins/post-views-counter/css/frontend.min.css
+[2025-02-08 18:49:22] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 30
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a732cf125-PgTgZb.tmp
+[2025-02-08 18:49:22] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/plugins/post-views-counter/css/frontend.min.css?simply_static_page=321
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/plugins/post-views-counter/css/frontend.min.css?simply_static_page=321
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:103] Filesize: 1058 bytes
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/plugins/post-views-counter/css/frontend.min.css
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a732cf125-PgTgZb.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-content/plugins/post-views-counter/css/frontend.min.css
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:22] [class-ss-page.php:119] Checking Content Identical:3aa8ddcec63fdd455bd8a4ccb34da371dc17b10b===. Value: FALSE
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/fonts/e5c1c8f8be89340d8fbe505e41a61a3b.css
+[2025-02-08 18:49:22] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 30
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a732e6a27-8kUm8J.tmp
+[2025-02-08 18:49:22] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/fonts/e5c1c8f8be89340d8fbe505e41a61a3b.css?simply_static_page=322
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/fonts/e5c1c8f8be89340d8fbe505e41a61a3b.css?simply_static_page=322
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:103] Filesize: 11530 bytes
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/fonts/e5c1c8f8be89340d8fbe505e41a61a3b.css
+[2025-02-08 18:49:22] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a732e6a27-8kUm8J.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-content/fonts/e5c1c8f8be89340d8fbe505e41a61a3b.css
+[2025-02-08 18:49:22] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:23] [class-ss-page.php:119] Checking Content Identical:15f1957337f61b9cf44e20c48fa797a14f81b601===. Value: FALSE
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/style.css
+[2025-02-08 18:49:23] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 30
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7330e29f-iGLIXm.tmp
+[2025-02-08 18:49:23] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/style.css?simply_static_page=323
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/style.css?simply_static_page=323
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:103] Filesize: 69325 bytes
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/style.css
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7330e29f-iGLIXm.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-content/themes/videoshare/style.css
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:23] [class-ss-page.php:119] Checking Content Identical:545a1608b22ee12472f400b77c8e235ff226d49e===. Value: FALSE
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/assets/css/font-awesome.css
+[2025-02-08 18:49:23] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 30
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7332edc9-e4bsTR.tmp
+[2025-02-08 18:49:23] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/assets/css/font-awesome.css?simply_static_page=324
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/assets/css/font-awesome.css?simply_static_page=324
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:103] Filesize: 74798 bytes
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/assets/css/font-awesome.css
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7332edc9-e4bsTR.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-content/themes/videoshare/assets/css/font-awesome.css
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:23] [class-ss-page.php:119] Checking Content Identical:dbeea50b750eae26ec216f0f568bfac61314b92a===. Value: FALSE
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/responsive.css
+[2025-02-08 18:49:23] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 30
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7334f8df-1UbewN.tmp
+[2025-02-08 18:49:23] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/responsive.css?simply_static_page=325
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/responsive.css?simply_static_page=325
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:103] Filesize: 7662 bytes
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/responsive.css
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a7334f8df-1UbewN.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-content/themes/videoshare/responsive.css
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:23] [class-ss-page.php:119] Checking Content Identical:50fdf0ee92160ffb7d753a11e1ab60234c4fd681===. Value: FALSE
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/themes/videoshare/genericons/genericons.css
+[2025-02-08 18:49:23] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 30
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a73370417-TABUu1.tmp
+[2025-02-08 18:49:23] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/themes/videoshare/genericons/genericons.css?simply_static_page=326
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/themes/videoshare/genericons/genericons.css?simply_static_page=326
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:103] Filesize: 229 bytes
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/themes/videoshare/genericons/genericons.css
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a73370417-TABUu1.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-content/themes/videoshare/genericons/genericons.css
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:23] [class-ss-page.php:119] Checking Content Identical:d06a972143e86581487bb5eecd3edcbeda44948e===. Value: FALSE
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-json/
+[2025-02-08 18:49:23] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 30
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/erome/wp-json/
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/xmlrpc.php
+[2025-02-08 18:49:23] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 30
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/erome/xmlrpc.php
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-02-08 18:49:23] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 1 of 30 pages/files
+[2025-02-08 18:49:23] [class-ss-archive-creation-job.php:212] We're not done with the fetch_urls task yet
+[2025-02-08 18:49:23] [class-ss-archive-creation-job.php:172] Current task: fetch_urls
+[2025-02-08 18:49:23] [class-ss-archive-creation-job.php:182] Performing task: fetch_urls
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:69] Total pages: 36; Pages remaining: 6
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/author/erome6655/
+[2025-02-08 18:49:23] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 36
+[2025-02-08 18:49:23] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a733e7969-t8luAb.tmp
+[2025-02-08 18:49:23] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/author/erome6655/?simply_static_page=329
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/author/erome6655/?simply_static_page=329
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:103] Filesize: 25137 bytes
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:233] New filename for static page: /author/erome6655/index.html
+[2025-02-08 18:49:23] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a733e7969-t8luAb.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/author/erome6655/index.html
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:24] [class-ss-page.php:119] Checking Content Identical:9938293e2b7a2d19582f630974114dbe6c716eba===. Value: FALSE
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/2025/02/
+[2025-02-08 18:49:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 36
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a73458e07-VLowHU.tmp
+[2025-02-08 18:49:24] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/2025/02/?simply_static_page=330
+[2025-02-08 18:49:24] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/2025/02/?simply_static_page=330
+[2025-02-08 18:49:24] [class-ss-url-fetcher.php:103] Filesize: 24825 bytes
+[2025-02-08 18:49:24] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html
+[2025-02-08 18:49:24] [class-ss-url-fetcher.php:233] New filename for static page: /2025/02/index.html
+[2025-02-08 18:49:24] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a73458e07-VLowHU.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/2025/02/index.html
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:24] [class-ss-page.php:119] Checking Content Identical:a6486784b13b37e1131164bbb11e86a32b0d977e===. Value: FALSE
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-content/plugins/post-views-counter/js/frontend.min.js
+[2025-02-08 18:49:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 36
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:83] URL is not being excluded
+[2025-02-08 18:49:24] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a734cbf19-azXHqJ.tmp
+[2025-02-08 18:49:24] [class-ss-page-handler.php:38] URL Prepared:http://localhost/erome/wp-content/plugins/post-views-counter/js/frontend.min.js?simply_static_page=331
+[2025-02-08 18:49:24] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost/erome/wp-content/plugins/post-views-counter/js/frontend.min.js?simply_static_page=331
+[2025-02-08 18:49:24] [class-ss-url-fetcher.php:103] Filesize: 2873 bytes
+[2025-02-08 18:49:24] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/javascript
+[2025-02-08 18:49:24] [class-ss-url-fetcher.php:233] New filename for static page: /wp-content/plugins/post-views-counter/js/frontend.min.js
+[2025-02-08 18:49:24] [class-ss-url-fetcher.php:143] Renaming temp file from C:\Users\ARKHAN~1\AppData\Local\Temp/67a7a734cbf19-azXHqJ.tmp to F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551/wp-content/plugins/post-views-counter/js/frontend.min.js
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:151] Extracting URLs and replacing URLs in the static file
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:158] Adding 0 URLs to the queue
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:169] We're saving this URL; keeping the static file
+[2025-02-08 18:49:24] [class-ss-page.php:119] Checking Content Identical:f59f86274fa96a26e1519ec592875f7bd98cd00c===. Value: FALSE
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-json/wp/v2/posts/40
+[2025-02-08 18:49:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 36
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/erome/wp-json/wp/v2/posts/40
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-json/oembed/1.0/embed
+[2025-02-08 18:49:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 36
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/erome/wp-json/oembed/1.0/embed
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-02-08 18:49:24] [class-ss-fetch-urls-task.php:72] URL: http://localhost/erome/wp-json/wp/v2/posts/36
+[2025-02-08 18:49:24] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 36
+[2025-02-08 18:49:25] [class-ss-fetch-urls-task.php:79] Excludable found: URL: http://localhost/erome/wp-json/wp/v2/posts/36
+[2025-02-08 18:49:25] [class-ss-fetch-urls-task.php:89] Skipping URL because it is no-save and no-follow
+[2025-02-08 18:49:25] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 30 of 36 pages/files
+[2025-02-08 18:49:25] [class-ss-archive-creation-job.php:212] We're not done with the fetch_urls task yet
+[2025-02-08 18:49:25] [class-ss-archive-creation-job.php:172] Current task: fetch_urls
+[2025-02-08 18:49:25] [class-ss-archive-creation-job.php:182] Performing task: fetch_urls
+[2025-02-08 18:49:25] [class-ss-fetch-urls-task.php:69] Total pages: 36; Pages remaining: 0
+[2025-02-08 18:49:25] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 36 of 36 pages/files
+[2025-02-08 18:49:25] [class-ss-archive-creation-job.php:204] We've found our next task: transfer_files_locally
+[2025-02-08 18:49:25] [class-ss-archive-creation-job.php:234] Cleaning on first run for task: transfer_files_locally
+[2025-02-08 18:49:25] [class-ss-archive-creation-job.php:172] Current task: transfer_files_locally
+[2025-02-08 18:49:25] [class-ss-archive-creation-job.php:182] Performing task: transfer_files_locally
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /index.html
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /sample-page/index.html
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/sample-page
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /category/uncategorized/index.html
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/category/uncategorized
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /hi-everyone-sex-video-watch-downloaad/index.html
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/hi-everyone-sex-video-watch-downloaad
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /adam-marry-nude-porn-sex-xxx-video/index.html
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/adam-marry-nude-porn-sex-xxx-video
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /tesyt/index.html
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/tesyt
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /hello/index.html
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/hello
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /youtube/index.html
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/youtube
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /xviddeos-watch-free-porn-videos-here/index.html
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/xviddeos-watch-free-porn-videos-here
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /hello-world/index.html
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/hello-world
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/uploads/2025/02/Screenshot-2025-02-08-222319.png
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/uploads/2025/02
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-includes/js/jquery/jquery.min.js
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-includes/js/jquery
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-includes/js/jquery/jquery-migrate.min.js
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-includes/js/jquery
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/assets/js/superfish.js
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/assets/js
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/assets/js/html5.js
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/assets/js
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/assets/js/owl.carousel.js
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/assets/js
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/assets/js/index.js
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/assets/js
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/assets/js/jquery.custom.js
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/assets/js
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-includes/css/dist/block-library/style.min.css
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-includes/css/dist/block-library
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-includes/css/dashicons.min.css
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-includes/css
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/plugins/post-views-counter/css/frontend.min.css
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/plugins/post-views-counter/css
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/fonts/e5c1c8f8be89340d8fbe505e41a61a3b.css
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/fonts
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/style.css
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/assets/css/font-awesome.css
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/assets/css
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/responsive.css
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/themes/videoshare/genericons/genericons.css
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/themes/videoshare/genericons
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /author/erome6655/index.html
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/author/erome6655
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /2025/02/index.html
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/2025/02
+[2025-02-08 18:49:25] [class-ss-transfer-files-locally-task.php:116] Trying to transfer: /wp-content/plugins/post-views-counter/js/frontend.min.js
+[2025-02-08 18:49:26] [class-ss-transfer-files-locally-task.php:137] Successfully transferred: F:/Xampp/Install/htdocs/erome/wp-content/plugins/post-views-counter/js
+[2025-02-08 18:49:26] [class-ss-transfer-files-locally-task.php:98] [Transfer] Total Pages:29. Processed Pages: 29
+[2025-02-08 18:49:26] [class-ss-task.php:44] Status message: [transfer_files_locally] Transferred 29 of 29 files
+[2025-02-08 18:49:26] [trait-can-process-pages.php:112] Total pages: 29; Pages remaining: 0
+[2025-02-08 18:49:26] [class-ss-transfer-files-locally-task.php:197] Transferring 404 Page
+[2025-02-08 18:49:26] [class-ss-transfer-files-locally-task.php:200] No 404 Page found at F:\Xampp\Install\htdocs\erome/wp-content/uploads\simply-static\temp-files/simply-static-1-1739040551\404\index.html
+[2025-02-08 18:49:26] [class-ss-task.php:44] Status message: [destination_url] Destination URL: <a href="https://arkhan6655.github.io/erome/" target="_blank">https://arkhan6655.github.io/erome/</a>
+[2025-02-08 18:49:26] [class-ss-archive-creation-job.php:204] We've found our next task: wrapup
+[2025-02-08 18:49:26] [class-ss-archive-creation-job.php:172] Current task: wrapup
+[2025-02-08 18:49:26] [class-ss-archive-creation-job.php:182] Performing task: wrapup
+[2025-02-08 18:49:26] [class-ss-wrapup-task.php:22] Deleting temporary files
+[2025-02-08 18:49:26] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
+[2025-02-08 18:49:26] [class-ss-archive-creation-job.php:199] This task is done and there are no more tasks, time to complete the job
+[2025-02-08 18:49:26] [class-ss-archive-creation-job.php:244] Completing the job
+[2025-02-08 18:49:26] [class-ss-archive-creation-job.php:371] Status message: [done] Done! Finished in 00:00:15
