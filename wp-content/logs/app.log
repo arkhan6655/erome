@@ -1,0 +1,73 @@
+
+08-02-2025 16:00:47 [localhost][info] Posts query: array (
+  'has_thumb' => false,
+  'type' => true,
+  'status' => 'post',
+  'category' => 0,
+  'date_start' => 0,
+  'date_end' => 0,
+)
+08-02-2025 16:00:47 [localhost][info] Posts query: array (
+  'has_thumb' => true,
+  'type' => true,
+  'status' => 'post',
+  'category' => 0,
+  'date_start' => 0,
+  'date_end' => 0,
+)
+-------------------------------
+08-02-2025 16:01:45 [localhost][info] Posts query: array (
+  'has_thumb' => false,
+  'type' => true,
+  'status' => 'post',
+  'category' => 0,
+  'date_start' => 0,
+  'date_end' => 0,
+)
+08-02-2025 16:01:45 [localhost][info] Posts query: array (
+  'has_thumb' => true,
+  'type' => true,
+  'status' => 'post',
+  'category' => 0,
+  'date_start' => 0,
+  'date_end' => 0,
+)
+-------------------------------
+08-02-2025 16:01:48 [localhost][info] START generate in mode:  find
+08-02-2025 16:01:48 [localhost][info] Posts query: array (
+  'has_thumb' => '0',
+  'type' => true,
+  'status' => 'post',
+  'category' => 0,
+  'date_start' => 0,
+  'date_end' => 0,
+)
+08-02-2025 16:01:48 [localhost][info] Queried posts IDs:  7,1
+-------------------------------
+08-02-2025 16:01:48 [localhost][info] --Start processing post ID = 7
+08-02-2025 16:01:48 [localhost][debug] Found images: array (
+)
+08-02-2025 16:01:48 [localhost][info] --End processing post ID = 7
+-------------------------------
+08-02-2025 16:01:49 [localhost][info] --Start processing post ID = 1
+08-02-2025 16:01:49 [localhost][debug] Found images: array (
+)
+08-02-2025 16:01:49 [localhost][info] --End processing post ID = 1
+-------------------------------
+08-02-2025 16:03:23 [localhost][info] Posts query: array (
+  'has_thumb' => false,
+  'type' => true,
+  'status' => 'post',
+  'category' => 0,
+  'date_start' => 0,
+  'date_end' => 0,
+)
+08-02-2025 16:03:23 [localhost][info] Posts query: array (
+  'has_thumb' => true,
+  'type' => true,
+  'status' => 'post',
+  'category' => 0,
+  'date_start' => 0,
+  'date_end' => 0,
+)
+-------------------------------
