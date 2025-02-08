@@ -97,11 +97,7 @@
 
 			<div class="site-info">
 
-				<?php
-					$videoshare_theme = wp_get_theme();
-				?>
-
-				&copy; <?php echo esc_html( date("o") ); ?> <?php echo esc_html( get_bloginfo('name') ); ?> - <a href="<?php echo esc_url( $videoshare_theme->get( 'AuthorURI' ) ); ?>"><?php esc_html_e('WordPress Theme', 'videoshare'); ?></a> <?php esc_html_e('by', 'videoshare'); ?> <a href="<?php echo esc_url( $videoshare_theme->get( 'AuthorURI' ) ); ?>"><?php esc_html_e('WPEnjoy', 'videoshare'); ?></a>
+				&copy; 2025 Erome - All Rights Reserved
 
 			</div><!-- .site-info -->
 
