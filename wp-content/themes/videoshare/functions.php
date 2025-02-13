@@ -33,16 +33,12 @@ function fetch_related_posts($atts) {
         $category_ids[] = $category->term_id;
     }
 
-    // Get current page for pagination
-    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
     $args = array(
         'post_type' => 'post',
         'posts_per_page' => $atts['posts_per_page'],
-        'paged' => $paged,
         'post__not_in' => array($current_post_id),
         'category__in' => $category_ids,
-        'orderby' => 'rand',
+        'orderby' => 'rand', // Random posts
     );
 
     $query = new WP_Query($args);
@@ -50,7 +46,7 @@ function fetch_related_posts($atts) {
         return '<p>No related posts found based on the categories.</p>';
     }
 
-    // Start output
+    // Start output for related posts
     $output = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; max-width: 1200px; margin: auto;">';
 
     while ($query->have_posts()) : $query->the_post();
@@ -102,22 +98,24 @@ function fetch_related_posts($atts) {
 
     endwhile;
 
-    // Use the same pagination from your latest posts shortcode
-    $big = 999999999;
-    $pagination = paginate_links(array(
-        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-        'format' => '?paged=%#%',
-        'current' => max(1, get_query_var('paged')),
-        'total' => $query->max_num_pages,
-        'prev_text' => __('« Prev'),
-        'next_text' => __('Next »'),
-    ));
-
     $output .= '</div>'; // Closing Grid Wrapper
 
-    if ($pagination) {
-        $output .= '<div class="pagination" style="text-align: center; margin-top: 20px;">' . $pagination . '</div>';
+    // Fetching all categories and displaying them in a styled list
+    $all_categories = get_categories();
+    $output .= '<div style="margin-top: 20px; text-align: center;">
+                    <h3>Explore More Categories</h3>
+                    <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">';
+    
+    foreach ($all_categories as $category) {
+        $category_link = get_category_link($category->term_id);
+        $output .= '<li style="margin: 5px 5px;">
+                        <a href="' . esc_url($category_link) . '" style="color: #0073aa; text-decoration: none; font-weight: bold; font-size: 14px; padding: 5px 10px; border: 1px solid #0073aa; border-radius: 20px; transition: background-color 0.3s;">
+                            ' . esc_html($category->name) . '
+                        </a>
+                    </li>';
     }
+
+    $output .= '</ul></div>';
 
     wp_reset_postdata();
 
@@ -125,9 +123,6 @@ function fetch_related_posts($atts) {
 }
 
 add_shortcode('fetch_related_posts', 'fetch_related_posts');
-
-
-
 
 
 
@@ -234,6 +229,7 @@ function fetch_iframes_from_posts($atts) {
 }
 
 add_shortcode('fetch_iframes_from_posts', 'fetch_iframes_from_posts');
+
 
 
 
