@@ -12,7 +12,7 @@ function fetch_related_posts($atts) {
     // Set up the shortcode attributes
     $atts = shortcode_atts(
         array(
-            'posts_per_page' => 6, // Number of related posts per page
+            'posts_per_page' => 5, // Number of related posts to display
         ),
         $atts,
         'fetch_related_posts'
@@ -22,17 +22,20 @@ function fetch_related_posts($atts) {
     $current_post_id = get_the_ID();
     $categories = get_the_category($current_post_id);
     
+    // If no categories, return a message
     if (empty($categories)) {
-        return '<p>No related posts found.</p>';
+        return '<p>No related posts found. The current post does not belong to any category.</p>';
     }
 
     // Get category IDs
-    $category_ids = wp_list_pluck($categories, 'term_id');
+    $category_ids = array();
+    foreach ($categories as $category) {
+        $category_ids[] = $category->term_id;
+    }
 
-    // Get current page number for pagination
-    $paged = (get_query_var('paged')) ? get_query_var('paged') : (get_query_var('page') ? get_query_var('page') : 1);
+    // Get current page for pagination
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-    // Query Arguments
     $args = array(
         'post_type' => 'post',
         'posts_per_page' => $atts['posts_per_page'],
@@ -44,16 +47,20 @@ function fetch_related_posts($atts) {
 
     $query = new WP_Query($args);
     if (!$query->have_posts()) {
-        return '<p>No related posts found.</p>';
+        return '<p>No related posts found based on the categories.</p>';
     }
 
-    // Start Output
-    $output = '<div class="related-posts-grid">';
+    // Start output
+    $output = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; max-width: 1200px; margin: auto;">';
 
     while ($query->have_posts()) : $query->the_post();
         $post_content = get_the_content();
         preg_match('/<iframe.*?src="(.*?)".*?<\/iframe>/s', $post_content, $iframe_match);
-        $iframe = !empty($iframe_match) ? $iframe_match[0] : '<div class="iframe-placeholder"><p>' . get_the_title() . '</p></div>';
+
+        $iframe = !empty($iframe_match) ? $iframe_match[0] : '<div style="position: relative; width: 100%; padding-bottom: 56.25%; background-color: #ddd; text-align: center;">
+                        <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; color: #333;">' 
+                        . get_the_title() . '</p>
+                    </div>';
 
         $post_link = get_permalink();
         $post_title = get_the_title();
@@ -67,51 +74,52 @@ function fetch_related_posts($atts) {
 
         // Fetch Categories (Clickable)
         $categories = get_the_category();
-        $category_links = [];
-        if ($categories) {
-            foreach ($categories as $category) {
-                $category_links[] = '<a href="' . get_category_link($category->term_id) . '" class="related-category">' . esc_html($category->name) . '</a>';
-            }
-        }
+        $category_link = !empty($categories) ? get_category_link($categories[0]->term_id) : '#';
+        $category_name = !empty($categories) ? esc_html($categories[0]->name) : 'Uncategorized';
 
-        $output .= '<div class="related-post">
-                        <div class="iframe-container">
-                            <a href="' . esc_url($post_link) . '" class="iframe-overlay"></a>
+        $output .= '<div style="border: 1px solid #ddd; padding: 5px; background: #fff; text-align: center; position: relative; border-radius: 8px; overflow: hidden;">
+                        <div style="position: relative;">
+                            <!-- Clickable overlay on iframe only -->
+                            <a href="' . esc_url($post_link) . '" style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;"></a>
                             ' . $iframe . '
                         </div>
-                        <div class="related-title">
-                            <a href="' . esc_url($post_link) . '">' . esc_html($post_title) . '</a>
+                        <div style="margin-top: 3px; font-size: 13px; color: #333; font-weight: bold;">
+                            <!-- Make the post title clickable and color it black -->
+                            <a href="' . esc_url($post_link) . '" style="color: #000; text-decoration: none; font-weight: bold;">' . esc_html($post_title) . '</a>
                         </div>
-                        <div class="related-meta">
-                            <div class="related-meta-item">' . implode(', ', $category_links) . '</div>
-                            <div class="related-meta-item">' . esc_html($time_ago) . '</div>
-                            <div class="related-meta-item"><i class="far fa-eye"></i> ' . number_format($post_views) . ' views</div>
+                        <div style="font-size: 12px; color: #777; margin-top: 3px; display: flex; justify-content: space-between; padding: 0 5px; align-items: center;">
+                            <div style="flex: 1; text-align: left;">
+                                <a href="' . esc_url($category_link) . '" style="color: #0073aa; text-decoration: none; font-weight: bold; font-size: 12px;">' . $category_name . '</a>
+                            </div>
+                            <div style="flex: 1; text-align: center;">
+                                <span>' . esc_html($time_ago) . '</span>
+                            </div>
+                            <div style="flex: 1; text-align: right;">
+                                <span><i class="far fa-eye"></i> ' . number_format($post_views) . ' views</span>
+                            </div>
                         </div>
                     </div>';
+
     endwhile;
 
-    wp_reset_postdata();
-    $output .= '</div>'; // Closing .related-posts-grid
-
-    // Pagination Fix
-    $big = 999999999; // Large number to avoid conflicts
+    // Use the same pagination from your latest posts shortcode
+    $big = 999999999;
     $pagination = paginate_links(array(
         'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
         'format' => '?paged=%#%',
-        'current' => max(1, $paged),
+        'current' => max(1, get_query_var('paged')),
         'total' => $query->max_num_pages,
         'prev_text' => __('« Prev'),
         'next_text' => __('Next »'),
-        'type' => 'array', // Returns an array for better styling
     ));
 
+    $output .= '</div>'; // Closing Grid Wrapper
+
     if ($pagination) {
-        $output .= '<div class="related-pagination">';
-        foreach ($pagination as $page_link) {
-            $output .= '<span class="pagination-item">' . $page_link . '</span>';
-        }
-        $output .= '</div>';
+        $output .= '<div class="pagination" style="text-align: center; margin-top: 20px;">' . $pagination . '</div>';
     }
+
+    wp_reset_postdata();
 
     return $output;
 }
@@ -124,11 +132,14 @@ add_shortcode('fetch_related_posts', 'fetch_related_posts');
 
 
 
+
+
+
 function fetch_iframes_from_posts($atts) {
     // Set up the shortcode attributes
     $atts = shortcode_atts(
         array(
-            'posts_per_page' => 20, // Number of posts to display per page
+            'posts_per_page' => 5, // Number of posts to display per page
             'category' => '',
         ),
         $atts,
