@@ -6,6 +6,227 @@
  *
  * @package videoshare
  */
+// Register shortcode to fetch and display iframes from posts
+// 
+function fetch_related_posts($atts) {
+    // Set up the shortcode attributes
+    $atts = shortcode_atts(
+        array(
+            'posts_per_page' => 6, // Number of related posts per page
+        ),
+        $atts,
+        'fetch_related_posts'
+    );
+
+    // Get current post ID and categories
+    $current_post_id = get_the_ID();
+    $categories = get_the_category($current_post_id);
+    
+    if (empty($categories)) {
+        return '<p>No related posts found.</p>';
+    }
+
+    // Get category IDs
+    $category_ids = wp_list_pluck($categories, 'term_id');
+
+    // Get current page number for pagination
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : (get_query_var('page') ? get_query_var('page') : 1);
+
+    // Query Arguments
+    $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => $atts['posts_per_page'],
+        'paged' => $paged,
+        'post__not_in' => array($current_post_id),
+        'category__in' => $category_ids,
+        'orderby' => 'rand',
+    );
+
+    $query = new WP_Query($args);
+    if (!$query->have_posts()) {
+        return '<p>No related posts found.</p>';
+    }
+
+    // Start Output
+    $output = '<div class="related-posts-grid">';
+
+    while ($query->have_posts()) : $query->the_post();
+        $post_content = get_the_content();
+        preg_match('/<iframe.*?src="(.*?)".*?<\/iframe>/s', $post_content, $iframe_match);
+        $iframe = !empty($iframe_match) ? $iframe_match[0] : '<div class="iframe-placeholder"><p>' . get_the_title() . '</p></div>';
+
+        $post_link = get_permalink();
+        $post_title = get_the_title();
+
+        // Fetch Post Views
+        $post_views = function_exists('pvc_get_post_views') ? pvc_get_post_views(get_the_ID()) : 0;
+
+        // Fetch "Time Ago" Format
+        $post_time = get_the_time('U');
+        $time_ago = human_time_diff($post_time, current_time('timestamp')) . ' ago';
+
+        // Fetch Categories (Clickable)
+        $categories = get_the_category();
+        $category_links = [];
+        if ($categories) {
+            foreach ($categories as $category) {
+                $category_links[] = '<a href="' . get_category_link($category->term_id) . '" class="related-category">' . esc_html($category->name) . '</a>';
+            }
+        }
+
+        $output .= '<div class="related-post">
+                        <div class="iframe-container">
+                            <a href="' . esc_url($post_link) . '" class="iframe-overlay"></a>
+                            ' . $iframe . '
+                        </div>
+                        <div class="related-title">
+                            <a href="' . esc_url($post_link) . '">' . esc_html($post_title) . '</a>
+                        </div>
+                        <div class="related-meta">
+                            <div class="related-meta-item">' . implode(', ', $category_links) . '</div>
+                            <div class="related-meta-item">' . esc_html($time_ago) . '</div>
+                            <div class="related-meta-item"><i class="far fa-eye"></i> ' . number_format($post_views) . ' views</div>
+                        </div>
+                    </div>';
+    endwhile;
+
+    wp_reset_postdata();
+    $output .= '</div>'; // Closing .related-posts-grid
+
+    // Pagination Fix
+    $big = 999999999; // Large number to avoid conflicts
+    $pagination = paginate_links(array(
+        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+        'format' => '?paged=%#%',
+        'current' => max(1, $paged),
+        'total' => $query->max_num_pages,
+        'prev_text' => __('« Prev'),
+        'next_text' => __('Next »'),
+        'type' => 'array', // Returns an array for better styling
+    ));
+
+    if ($pagination) {
+        $output .= '<div class="related-pagination">';
+        foreach ($pagination as $page_link) {
+            $output .= '<span class="pagination-item">' . $page_link . '</span>';
+        }
+        $output .= '</div>';
+    }
+
+    return $output;
+}
+
+add_shortcode('fetch_related_posts', 'fetch_related_posts');
+
+
+
+
+
+
+
+function fetch_iframes_from_posts($atts) {
+    // Set up the shortcode attributes
+    $atts = shortcode_atts(
+        array(
+            'posts_per_page' => 20, // Number of posts to display per page
+            'category' => '',
+        ),
+        $atts,
+        'fetch_iframes_from_posts'
+    );
+
+    // Get current page
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+    // WP_Query to get the latest posts
+    $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => $atts['posts_per_page'],
+        'paged' => $paged, // Add pagination parameter
+    );
+
+    if (!empty($atts['category'])) {
+        $args['category_name'] = $atts['category'];
+    }
+
+    $query = new WP_Query($args);
+    $output = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; max-width: 1200px; margin: auto;">';
+
+    while ($query->have_posts()) : $query->the_post();
+        $post_content = get_the_content();
+        preg_match('/<iframe.*?src="(.*?)".*?<\/iframe>/s', $post_content, $iframe_match);
+
+        $iframe = !empty($iframe_match) ? $iframe_match[0] : '<div style="position: relative; width: 100%; padding-bottom: 56.25%; background-color: #ddd; text-align: center;">
+                        <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; color: #333;">' 
+                        . get_the_title() . '</p>
+                    </div>';
+
+        $post_link = get_permalink();
+        $post_title = get_the_title();
+
+        // Fetch Post Views
+        $post_views = function_exists('pvc_get_post_views') ? pvc_get_post_views(get_the_ID()) : 0;
+
+        // Fetch "Time Ago" Format
+        $post_time = get_the_time('U');
+        $time_ago = human_time_diff($post_time, current_time('timestamp')) . ' ago';
+
+        // Fetch Categories (Clickable)
+        $categories = get_the_category();
+        $category_link = !empty($categories) ? get_category_link($categories[0]->term_id) : '#';
+        $category_name = !empty($categories) ? esc_html($categories[0]->name) : 'Uncategorized';
+
+        $output .= '<div style="border: 1px solid #ddd; padding: 5px; background: #fff; text-align: center; position: relative; border-radius: 8px; overflow: hidden;">
+                        <div style="position: relative;">
+                            <!-- Clickable overlay on iframe only -->
+                            <a href="' . esc_url($post_link) . '" style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;"></a>
+                            ' . $iframe . '
+                        </div>
+                        <div style="margin-top: 3px; font-size: 13px; color: #333; font-weight: bold;">
+                            <!-- Make the post title clickable and color it black -->
+                            <a href="' . esc_url($post_link) . '" style="color: #000; text-decoration: none; font-weight: bold;">' . esc_html($post_title) . '</a>
+                        </div>
+                        <div style="font-size: 12px; color: #777; margin-top: 3px; display: flex; justify-content: space-between; padding: 0 5px; align-items: center;">
+                            <div style="flex: 1; text-align: left;">
+                                <a href="' . esc_url($category_link) . '" style="color: #0073aa; text-decoration: none; font-weight: bold; font-size: 12px;">' . $category_name . '</a>
+                            </div>
+                            <div style="flex: 1; text-align: center;">
+                                <span>' . esc_html($time_ago) . '</span>
+                            </div>
+                            <div style="flex: 1; text-align: right;">
+                                <span><i class="far fa-eye"></i> ' . number_format($post_views) . ' views</span>
+                            </div>
+                        </div>
+                    </div>';
+
+    endwhile;
+
+    // Add pagination
+    $big = 999999999; // Need an unlikely integer
+    $pagination = paginate_links(array(
+        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+        'format' => '?paged=%#%',
+        'current' => max(1, get_query_var('paged')),
+        'total' => $query->max_num_pages,
+        'prev_text' => __('« Prev'),
+        'next_text' => __('Next »'),
+    ));
+
+    $output .= '</div>';
+
+    if ($pagination) {
+        $output .= '<div class="pagination" style="text-align: center; margin-top: 20px;">' . $pagination . '</div>';
+    }
+
+    wp_reset_postdata();
+    return $output;
+}
+
+add_shortcode('fetch_iframes_from_posts', 'fetch_iframes_from_posts');
+
+
+
+
 
 if ( ! function_exists( 'videoshare_setup' ) ) :
 
@@ -254,3 +475,8 @@ function videoshare_widgets_init() {
 																			
 }
 add_action( 'widgets_init', 'videoshare_widgets_init' );
+
+
+
+
+
