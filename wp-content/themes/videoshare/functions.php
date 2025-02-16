@@ -12,7 +12,7 @@ function fetch_related_posts($atts) {
     // Set up the shortcode attributes
     $atts = shortcode_atts(
         array(
-            'posts_per_page' => 5, // Number of related posts to display
+            'posts_per_page' => 20, // Number of related posts to display
         ),
         $atts,
         'fetch_related_posts'
@@ -64,9 +64,6 @@ function fetch_related_posts($atts) {
         // Fetch Post Views
         $post_views = function_exists('pvc_get_post_views') ? pvc_get_post_views(get_the_ID()) : 0;
 
-        // Fetch "Time Ago" Format
-        $post_time = get_the_time('U');
-        $time_ago = human_time_diff($post_time, current_time('timestamp')) . ' ago';
 
         // Fetch Categories (Clickable)
         $categories = get_the_category();
@@ -87,9 +84,7 @@ function fetch_related_posts($atts) {
                             <div style="flex: 1; text-align: left;">
                                 <a href="' . esc_url($category_link) . '" style="color: #0073aa; text-decoration: none; font-weight: bold; font-size: 12px;">' . $category_name . '</a>
                             </div>
-                            <div style="flex: 1; text-align: center;">
-                                <span>' . esc_html($time_ago) . '</span>
-                            </div>
+                           
                             <div style="flex: 1; text-align: right;">
                                 <span><i class="far fa-eye"></i> ' . number_format($post_views) . ' views</span>
                             </div>
@@ -134,7 +129,7 @@ function fetch_iframes_from_posts($atts) {
     // Set up the shortcode attributes
     $atts = shortcode_atts(
         array(
-            'posts_per_page' => 5, // Number of posts to display per page
+            'posts_per_page' => 50, // Number of posts to display per page
             'category' => '',
         ),
         $atts,
@@ -173,9 +168,6 @@ function fetch_iframes_from_posts($atts) {
         // Fetch Post Views
         $post_views = function_exists('pvc_get_post_views') ? pvc_get_post_views(get_the_ID()) : 0;
 
-        // Fetch "Time Ago" Format
-        $post_time = get_the_time('U');
-        $time_ago = human_time_diff($post_time, current_time('timestamp')) . ' ago';
 
         // Fetch Categories (Clickable)
         $categories = get_the_category();
@@ -196,9 +188,7 @@ function fetch_iframes_from_posts($atts) {
                             <div style="flex: 1; text-align: left;">
                                 <a href="' . esc_url($category_link) . '" style="color: #0073aa; text-decoration: none; font-weight: bold; font-size: 12px;">' . $category_name . '</a>
                             </div>
-                            <div style="flex: 1; text-align: center;">
-                                <span>' . esc_html($time_ago) . '</span>
-                            </div>
+                            
                             <div style="flex: 1; text-align: right;">
                                 <span><i class="far fa-eye"></i> ' . number_format($post_views) . ' views</span>
                             </div>
