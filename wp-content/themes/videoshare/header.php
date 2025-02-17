@@ -12,6 +12,8 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	<link rel="icon" href="http://localhost/erome/wp-content/uploads/2025/02/Erome-HD.png" type="image/png">
+
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,7 +66,7 @@
 				<?php } else { ?>
 
 				<div class="site-title">
-					<h1><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo('name'); ?></a></h1>
+					<h3><a href="<?php echo esc_url( home_url('/home') ); ?>"><?php bloginfo('name'); ?></a></h3>
 				</div><!-- .site-title -->
 				
 				<div class="site-description">
