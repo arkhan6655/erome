@@ -53,64 +53,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="shortlink" href="https://methstreamsplayer.xyz/">
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://methstreamsplayer.xyz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmethstreamsplayer.xyz%2F">
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://methstreamsplayer.xyz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmethstreamsplayer.xyz%2F#038;format=xml">
-<!-- HFCM by 99 Robots - Snippet # 1: Iframe button -->
- <script>document.addEventListener("DOMContentLoaded", function () {
-    let iframe = document.querySelector("iframe"); // Select first iframe
-    if (!iframe) return; // Exit if no iframe is found
-
-    // Create a wrapper div around the iframe
-    let wrapper = document.createElement("div");
-    wrapper.className = "iframe-wrapper";
-    iframe.parentNode.insertBefore(wrapper, iframe);
-    wrapper.appendChild(iframe);
-
-    // Create fullscreen button
-    let btn = document.createElement("button");
-    btn.innerHTML = "Go Fullscreen!";
-    btn.className = "fullscreen-btn";
-    btn.onclick = function () {
-        if (!document.fullscreenElement) {
-            if (wrapper.requestFullscreen) {
-                wrapper.requestFullscreen();
-            } else if (wrapper.mozRequestFullScreen) {
-                wrapper.mozRequestFullScreen();
-            } else if (wrapper.webkitRequestFullscreen) {
-                wrapper.webkitRequestFullscreen();
-            } else if (wrapper.msRequestFullscreen) {
-                wrapper.msRequestFullscreen();
-            }
-        } else {
-            document.exitFullscreen();
-        }
-    };
-
-    // Insert button after the iframe wrapper
-    wrapper.parentNode.insertBefore(btn, wrapper.nextSibling);
-
-    // Apply some styling
-    let style = document.createElement("style");
-    style.innerHTML = `
-      
-        .fullscreen-btn {
-            display: block;
-        border-radius: 5px;
-           margin: 1px auto;
-            font-size: 16px;
-            font-weight: bold;
-            color: white;
-            background-color: #FF5E00;
-
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .fullscreen-btn:hover {
-            background-color: #0056b3;
-        }
-    `;
-    document.head.appendChild(style);
-});</script>
-
-<!-- /end HFCM by 99 Robots -->
 <style type="text/css" id="custom-background-css">body.custom-background { background-color: #111111; }</style>
 			<style type="text/css" id="wp-custom-css">/* Ad Container Styling */
 
