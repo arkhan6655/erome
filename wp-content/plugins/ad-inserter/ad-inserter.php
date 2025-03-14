@@ -2,15 +2,15 @@
 
 /*
 Plugin Name: Ad Inserter
-Version: 2.8.0
+Version: 2.8.1
 Description: Ad management with many advanced advertising features to insert ads at optimal positions
 Author: Igor Funa
 Author URI: http://igorfuna.com/
 Plugin URI: https://adinserter.pro/documentation
 Text Domain: ad-inserter
 Domain Path: /languages
-Requires at least: 5
-Requires PHP: 7.2
+Requires at least: 5.0
+Requires PHP: 7.4
 License: GPLv3
 */
 
@@ -18,8 +18,14 @@ License: GPLv3
 
 Change Log
 
+Ad Inserter 2.8.1 - 2025-02-12
+- Updated depercated backend jQuery code
+- Fix for reflected cross-site scripting (XSS)
+- Few minor bug fixes, cosmetic changes and code improvements
+
 Ad Inserter 2.8.0 - 2025-01-21
 - Replaced placeholder image generator service - changed to dummyimage.com
+- Fix for false ad blocking detection when using external scripts
 - Security fix for potential cross site scripting (Pro only)
 - Added support to show rotation options in the list of blocks
 - Added support for custom reports for clients (Pro only)
@@ -5566,6 +5572,7 @@ function ai_load_options () {
   if (($ai_wp_data [AI_WP_DEBUGGING] & AI_DEBUG_PROCESSING) != 0) ai_log ("LOAD OPTIONS START");
 
   if (function_exists ('ai_load_remote_settings')) {
+    ai_check_settings ();
     if (ai_load_remote_settings ()) {
       if (($ai_wp_data [AI_WP_DEBUGGING] & AI_DEBUG_PROCESSING) != 0) ai_log ("LOAD OPTIONS END");
 

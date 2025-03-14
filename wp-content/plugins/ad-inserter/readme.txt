@@ -4,9 +4,9 @@ Contributors: adinserter, spacetime
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LHGZEMRTR7WB4
 Tags: ads, adsense, amp, ad rotation, ad manager
 Requires at least: 5.0
-Tested up to: 6.7
-Requires PHP: 7.2
-Stable tag: 2.8.0
+Tested up to: 6.8
+Requires PHP: 7.4
+Stable tag: 2.8.1
 License: GPLv3
 
 Manage Google AdSense, Media.net, Amazon banners, ads.txt, ad rotation, sticky widgets, AMP ads, DFP, tracking, AdSense header and footer code
@@ -15,7 +15,7 @@ Manage Google AdSense, Media.net, Amazon banners, ads.txt, ad rotation, sticky w
 
 Ad management plugin with many advanced advertising features to insert ad codes at optimal positions.
 
-Supports all kinds of ads including **Google AdSense**, **Google Ad Manager** (DFP - DoubleClick for publishers), contextual **Amazon Native Shopping Ads**, **Media.net** , **Infolinks** and **rotating banners.**
+Supports all kinds of ads including **Google AdSense**, **Google Ad Manager** (DFP - DoubleClick for publishers), Media.net , Infolinks and **rotating banners.**
 
 This plugin is more than AdSense plugin or plugin for ads. It provides many advanced options to insert opt-in forms, header scripts, Javascript, CSS, HTML, PHP, analytics, tracking or advert code anywhere on the page.
 
@@ -364,6 +364,11 @@ If you are not happy to reveal this information and you have opted in, simply di
 
 == Changelog ==
 
+= 2.8.1 =
+- Updated depercated backend jQuery code
+- Fix for reflected cross-site scripting (XSS)
+- Few minor bug fixes, cosmetic changes and code improvements
+
 = 2.8.0 =
 - Replaced placeholder image generator service - changed to dummyimage.com
 - Fix for false ad blocking detection when using external scripts
@@ -430,13 +435,17 @@ For the changelog of earlier versions, please refer to the separate changelog.tx
 
 == Upgrade Notice ==
 
+= 2.8.1 =
+Updated depercated backend jQuery code;
+Fix for reflected cross-site scripting (XSS);
+Few minor bug fixes, cosmetic changes and code improvements
+
 = 2.8.0 =
 Replaced placeholder image generator service - changed to dummyimage.com;
 Fix for false ad blocking detection when using external scripts;
 Security fix for potential cross site scripting (Pro only);
-Added support to show rotation options in the list of blocks;
-Added support for custom reports for clients (Pro only);
-Few minor bug fixes, cosmetic changes and code improvements
+Added support to show rotation options;
+Added support for custom reports(Pro only)
 
 = 2.7.39 =
 Improved frontend code;

@@ -206,9 +206,6 @@ class Plugin {
 		// Clear transients.
 		Util::clear_transients();
 
-		// Clear WP object cache.
-		wp_cache_flush();
-
 		// Start export.
 		$this->archive_creation_job->start( $blog_id, $type );
 
@@ -316,7 +313,7 @@ class Plugin {
 		);
 
 		$http_status_codes  = Page::get_http_status_codes_summary();
-		$total_static_pages = array_sum( array_values( $http_status_codes ) );
+		$total_static_pages = apply_filters( 'ss_total_pages', array_sum( array_values( $http_status_codes ) ) );
 		$total_pages        = ceil( $total_static_pages / $per_page );
 
 		do_action( 'ss_after_render_export_log', $blog_id );
@@ -399,9 +396,8 @@ class Plugin {
 			$task_list[] = 'create_zip_archive';
 		} elseif ( 'local' === $delivery_method ) {
 			$task_list[] = 'transfer_files_locally';
-		} elseif ( 'simply-cdn' === $delivery_method ) {
-			$task_list[] = 'simply_cdn';
 		}
+
 		$task_list[] = 'wrapup';
 
 		return $task_list;
