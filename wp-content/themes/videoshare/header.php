@@ -12,7 +12,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<link rel="icon" href="http://localhost/erome/wp-content/uploads/2025/02/Erome-HD.png" type="image/png">
+	<link rel="icon" href="http://localhost/erome/wp-content/uploads/2025/03/M-2.png" type="image/png">
 
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">

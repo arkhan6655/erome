@@ -97,7 +97,7 @@
 
 			<div class="site-info">
 
-				&copy; 2025 Erome - All Rights Reserved
+				&copy; 2025 Methstreams.World - All Rights Reserved
 
 			</div><!-- .site-info -->
 
