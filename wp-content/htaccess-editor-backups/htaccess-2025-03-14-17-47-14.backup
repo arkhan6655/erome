@@ -1,7 +1,15 @@
 # BEGIN LSCACHE
 # END LSCACHE
+
 # BEGIN NON_LSCACHE
 # END NON_LSCACHE
+
+# Redirect homepage to https://www.methstreams.world/
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/erome/?$ [NC]
+RewriteRule ^$ https://www.methstreams.world/ [R=301,L]
+</IfModule>
 
 # BEGIN WordPress
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
