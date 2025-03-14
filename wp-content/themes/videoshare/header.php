@@ -66,7 +66,7 @@
 				<?php } else { ?>
 
 				<div class="site-title">
-					<h3><a href="<?php echo esc_url( home_url('/index11') ); ?>"><?php bloginfo('name'); ?></a></h3>
+					<h3><a href="<?php echo esc_url( 'https://www.methstreams.world/' ); ?>"><?php bloginfo('name'); ?></a></h3>
 				</div><!-- .site-title -->
 				
 				<div class="site-description">
